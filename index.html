@@ -4,8 +4,59 @@
 <head>
 
   <meta name="viewport" content="width=device-width">
-     <tittle>HTML Elements</tIttle>
-  <style>table.my-table {
+     <title>Style-With-CSS</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap');
+      html{
+             background-color:#ccc;
+              }
+      body {
+            font-family:Arial,sans-serif;
+            background-color:#fff;
+            max-width:960px;
+            width:90%; 
+            margin:auto;
+            padding:2%;
+          }
+        .page-header{
+          background-color: #491cd1;
+          text-align: center;
+          font-family: 'Inknut Antiqua',serif;
+          text-shadow: 4px 4px 4px #aaa;
+        }
+/* start nav rules */
+      nav{
+           text-align:center; /* centers the nav */
+}
+
+      nav a{
+            color:#000; /* font color is black */
+}
+
+      nav ul {
+              list-style:none; /* removes the bullets */
+}
+      nav li{
+            display:inline-block; /* makes <li> horizontal, but able to declare margins */
+            margin:0 2%; /* margin left-right, gets smaller as necessary */
+}
+      nav a:hover{
+            text-decoration: none; /* default underline goes away on hover */
+}
+/* end nav rules */
+
+
+footer{
+  text-align: center;
+  clear:both;
+}
+
+
+  
+  
+  
+  table.my-table {
        border-collapse: collapse;
      }
 
@@ -31,10 +82,32 @@
    }
    table.my-table tr:nth-child(odd) {
      background-color: #ffffff;
-   }</style>
+   }
+
+
+ 
+ </style>
+
 </head>
 <body>
-  <h1>HTML Elements</h1>
+  <h1 class="page-header">Stylin' with CSS by Ariana Simon</h1>
+  <nav>
+    <ul>
+      <li><a href="#">Link 1</a></li>
+      <li><a href="#">Link 2</a></li>
+      <li><a href="#">Link 3</a></li>
+      <li><a href="#">Link 4</a></li>
+      <li><a href="#">Link 5</a></li>
+      
+
+
+
+
+    </ul>
+  </nav>
+  <p>This page demonstrates how to create a look and feel on our pages using CSS.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nunc nisi, commodo eget euismod ac, laoreet quis sem. Donec ornare pellentesque ex eget hendrerit. Nulla quis auctor mi, in blandit metus. Fusce ultrices ex sit amet ligula malesuada condimentum. In hac habitasse platea dictumst. Pellentesque sit amet aliquet libero. Mauris.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nunc nisi, commodo eget euismod ac, laoreet quis sem. Donec ornare pellentesque ex eget hendrerit. Nulla quis auctor mi, in blandit metus. Fusce ultrices ex sit amet ligula malesuada condimentum. In hac habitasse platea dictumst. Pellentesque sit amet aliquet libero. Mauris.</p>
   <p>This is my paragraph</p>
   <p>This is my second paragraph</p>
   <p>This is my third paragraph</p>
@@ -56,7 +129,7 @@
   <p> Here is how we use the <em>em</em> Tag.</p>
   <p> Here is how we use the <italize>italize</italize> Tag.</p>
   <p> Here is how we use the <strong>strong</strong> Tag.</p>
-  <div> here is inside the div <span style="background-color:yellow"></span></div>
+  <div> here is inside the div <span style="background-color: #FFFF00">Here we are inside a span</span></div>
   <table class="my-table">
     <tr>
       
@@ -67,21 +140,24 @@
     </tr>
     
     <tr>
-      <td>First Name</td>
-      <td>Last Name</td>
-      <td>Email</td>
+      <td>John</td>
+      <td>Doe</td>
+      <td>John@example.com</td>
     </tr>
     
     <tr>
-      <td>First Name</td>
-      <td>Last Name</td>
-      <td>Email</td>
+      <td>John</td>
+      <td>Doe</td>
+      <td>John@example.com</td>
     </tr>
     <tr>
-      <td>First Name</td>
-      <td>Last Name</td>
-      <td>Email</td>
+      <td>Jane</td>
+      <td>Doe</td>
+      <td>Jane@example.com</td>
     </tr>
+    </table>
+    <footer>copyright &copy; 2024</footer>
+
 </body>
 
 </html>
